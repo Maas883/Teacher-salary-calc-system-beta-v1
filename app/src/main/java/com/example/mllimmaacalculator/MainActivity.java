@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else{
                 if(swRehber.isChecked()){
-                    cem = 48;
+                    cem = 40;
                 }
                 if(swTehsil.isChecked()){
                     ali();
