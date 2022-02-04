@@ -137,13 +137,9 @@ public class MainActivity extends AppCompatActivity {
             t = s - s * 0.075;
             h = 0;
         }
-        else if (300 <= s && s < 1000){
+        else{
             t = s - (s - 300) * 0.14 - s * 0.075;
             h = (s - 300) * 0.14;
-        }
-        else{
-            h = 700 * 0.14 + (s - 1000) * 0.35;
-            t = s - h - s * 0.075;
         }
         hmtxt.setText(String.format("%.2f",s));
         amtxt.setText(String.format("%.2f",t));
