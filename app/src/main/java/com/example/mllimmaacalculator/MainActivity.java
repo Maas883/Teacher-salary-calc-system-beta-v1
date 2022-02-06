@@ -133,13 +133,13 @@ public class MainActivity extends AppCompatActivity {
     private void calc(double s){
         double t, h;
 
-        if (s < 300){
+        if (s < 200){
             t = s - s * 0.075;
             h = 0;
         }
         else{
-            t = s - (s - 300) * 0.14 - s * 0.075;
-            h = (s - 300) * 0.14;
+            t = s - (s - 200) * 0.14 - s * 0.075;
+            h = (s - 200) * 0.14;
         }
         hmtxt.setText(String.format("%.2f",s));
         amtxt.setText(String.format("%.2f",t));
