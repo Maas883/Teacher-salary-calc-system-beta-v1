@@ -3,4 +3,12 @@
     <string name="staj_daxil_edin">Stajı daxil edin</string>
     <string name="hesabla">HESABLA</string>
     <string name="v_zi_ilik_zr_d_rs_n_saat_miqdar">Əvəziçilik üzrə dərs \n saatı miqdarı</string>
+    <string name="sinif_r_hb_risinizmi">Sinif rəhbərisinizmi?</string>
+    <string name="xeyir">Xeyir</string>
+    <string name="b_li">Bəli</string>
+    <string name="orta">Orta</string>
+    <string name="ali">Ali</string>
+    <string name="t_hsiliniz">Təhsiliniz</string>
+    <string name="adi_sinifl_r_n_n_d_rs_y_k_n_z">Adi siniflər üçün \n dərs yükünüz</string>
+    <string name="lisey_sinifl_ri_n_nd_rs_y_k_n_z">Lisey sinifləri üçün\ndərs yükünüz</string>
 </resources>

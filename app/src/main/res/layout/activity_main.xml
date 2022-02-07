@@ -63,7 +63,8 @@
                 android:textColor="@color/black"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-                tools:layout_editor_absoluteX="16dp" />
+                tools:layout_editor_absoluteX="16dp"
+                android:autofillHints="" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -99,7 +100,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="16sp"
                     android:layout_marginRight="16sp"
-                    android:text="Sinif rəhbərisinizmi?"
+                    android:text="@string/sinif_r_hb_risinizmi"
                     android:textSize="14sp" />
 
             </com.google.android.material.card.MaterialCardView>
@@ -119,12 +120,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:textOff="Xeyir"
-                android:textOn="Bəli"
+                android:textOff="@string/xeyir"
+                android:textOn="@string/b_li"
                 android:thumb="@drawable/thumb"
                 app:showText="true"
                 app:track="@drawable/track"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -155,8 +156,8 @@
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:textColor="@color/black"
-                android:textOff="Orta"
-                android:textOn="Ali"
+                android:textOff="@string/orta"
+                android:textOn="@string/ali"
                 android:thumb="@drawable/thumb"
                 app:showText="true"
                 app:track="@drawable/track"
@@ -185,7 +186,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="16sp"
                     android:layout_marginRight="16sp"
-                    android:text="Təhsiliniz"
+                    android:text="@string/t_hsiliniz"
                     android:textSize="14sp" />
 
             </com.google.android.material.card.MaterialCardView>
@@ -221,7 +222,8 @@
                 android:inputType="number"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -245,7 +247,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="16sp"
                     android:layout_marginRight="16sp"
-                    android:text="Lisey sinifləri üçün\ndərs yükünüz"
+                    android:text="@string/lisey_sinifl_ri_n_nd_rs_y_k_n_z"
                     android:textSize="14sp" />
 
             </com.google.android.material.card.MaterialCardView>
@@ -281,7 +283,8 @@
                 android:ems="10"
                 android:inputType="number"
                 android:textColor="@color/black"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -305,7 +308,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="16sp"
                     android:layout_marginRight="16sp"
-                    android:text="Adi siniflər üçün \n dərs yükünüz"
+                    android:text="@string/adi_sinifl_r_n_n_d_rs_y_k_n_z"
                     android:textSize="14sp" />
 
             </com.google.android.material.card.MaterialCardView>
@@ -339,7 +342,8 @@
                 android:ems="10"
                 android:inputType="number"
                 android:textColor="@color/black"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -386,7 +390,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clickable="true"
-            app:shapeAppearanceOverlay="@style/UnSpecificCornerRounder">
+            app:shapeAppearanceOverlay="@style/UnSpecificCornerRounder"
+            android:focusable="true">
 
             <TextView
                 android:layout_width="match_parent"

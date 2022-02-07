@@ -4,12 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.os.Build;
 import android.os.Bundle;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
 
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
@@ -164,13 +162,12 @@ public class MainActivity extends AppCompatActivity {
         init_dialog();
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private void init_dialog(){
         // Start Dialog
         dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.custon_layout);
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-            dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.background));
-        }
+        dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.background));
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog.setCancelable(false);
         dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
